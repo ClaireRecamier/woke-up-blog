@@ -27,5 +27,6 @@ urlpatterns = [
     url(r'^posts/cultural-appropriation$', TemplateView.as_view(template_name='pages/homepage.html'), name="homepage"),
     url(r'^posts/model-minority-myth$', TemplateView.as_view(template_name='pages/homepage.html'), name="homepage"),
     url(r'^posts/reverse-racism$', TemplateView.as_view(template_name='pages/homepage.html'), name="homepage"),
+    url(r'^vent$', TemplateView.as_view(template_name='pages/homepage.html'), name="homepage"),
 #    url(r'^posts/model-minority-myth$', TemplateView.as_view(template_name='pages/homepage.html'), name="homepage"),
 ]
