@@ -36,7 +36,7 @@ def post_list_rr(request):
 #    return render(request, 'blog/post_list_cultural_appropriation.html',{'posts':posts})
 def post_list_vent(request):
     posts = Post.objects.filter(category=4)
-    return render(request, 'blog/post_list.html', {'posts': posts})
+    return render(request, 'pages/vent_homepage.html', {'posts': posts})
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
