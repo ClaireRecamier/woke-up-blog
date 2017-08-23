@@ -44,3 +44,35 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
+
+
+
+.homepage h1{
+     font-family: 'Sedgwick Ave Display', cursive;
+     font-size:800%;
+     text-align: center;
+}
+
+.homepage h2{
+    font-family: 'Source Code Pro', monospace;
+    font-size:100%;
+    text-align:center;
+}
+
+.homepage h3{
+    font-family:'Oswald', sans-serif;
+    font-size:150%;
+    text-align:center;
+}
+
+.homepage p{
+  font-family:'Oswald',sans-serif;
+  font-size: 100%;
+  text-align:center;
+}
+
+.homepage h4{
+  font-family:'Oswald',sans-serif;
+  font-size: 150%;
+  text-align:center;
+}

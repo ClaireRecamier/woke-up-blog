@@ -15,8 +15,17 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'', include('blog.urls')),
+    url(r'^posts/', include('blog.urls')),
+    url(r'^$', TemplateView.as_view(template_name='pages/homepage.html'), name="homepage"),
+    url(r'^talk/$', TemplateView.as_view(template_name='pages/talk_homepage.html'), name="talk_homepage"),
+#    url(r'^talk/culturalappropriation/$', TemplateView.as_view(template_name='pages/culturalappropriation.html'), name="culturalappropriation"),
+
+    url(r'^posts/cultural-appropriation$', TemplateView.as_view(template_name='pages/homepage.html'), name="homepage"),
+    url(r'^posts/model-minority-myth$', TemplateView.as_view(template_name='pages/homepage.html'), name="homepage"),
+    url(r'^posts/reverse-racism$', TemplateView.as_view(template_name='pages/homepage.html'), name="homepage"),
+#    url(r'^posts/model-minority-myth$', TemplateView.as_view(template_name='pages/homepage.html'), name="homepage"),
 ]
