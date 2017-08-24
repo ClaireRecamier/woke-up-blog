@@ -1,0 +1,10 @@
+#title {
+    width: 100%;
+    position: absolute;
+}
+
+h1{
+    font-family: 'Sedgwick Ave Display', sans-serif;
+    font-size: 350px;
+    text-align: center;
+}

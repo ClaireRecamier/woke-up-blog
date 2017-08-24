@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+<link rel = "stylesheet" href = "homepage_style.css">
 
 
 <!-- Latest compiled and minified CSS -->
@@ -27,14 +28,15 @@ body,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
     <a href="{% url 'talk_homepage' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Talk</a>
     <a href= "{% url 'post_list_vent' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Vent</a>
-    <a href="resources.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resources</a>
+    <a href="{% url 'resources' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resources</a>
+
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="{% url 'talk_homepage' %}" class="w3-bar-item w3-button w3-padding-large">Talk</a>
     <a href="{% url 'post_list_vent' %}" class="w3-bar-item w3-button w3-padding-large">Vent</a>
-    <a href="resources.html" class="w3-bar-item w3-button w3-padding-large">Resources</a>
+    <a href="{% url 'resources' %}" class="w3-bar-item w3-button w3-padding-large">Resources</a>
   </div>
 </div>
 
@@ -79,13 +81,9 @@ Topics addressed include cultural appropriation, racism, gender inequality, etc.
           <h5> Woke Up is founded by four girls who are passionate about educating their generation about social issues. They hope this platform will benefit their society and help young adults eventually become comfortable discussing and bringing awareness to these topics in public.</h5>
 
           <p class="w3-text-grey">
-          Cameron <br>
-          Cameron is a rising senior in high school in Long Island. Cameron wanted a place where teens could talk about different things like social issues or just a place to talk about different things, but be anonymous. Being anonymous helps the person in many ways. Now that person doesn't have to be scared to say different things, worried about being judged or even known as the person who said what they said. She feels this will help teens get things off their chest and relieve some stress. <br>
-          Claire <br>
-          Claire is a rising high school senior in Manhattan.
-          Elain<br>
-          Elaine hopes that Woke Up will allow an outlet for teenagers to share their opinions and become more aware and accepting of other’s opinions as well. She wants teenagers to have discussions without being afraid of backlash. She thanks you for visiting Woke Up and hopes that you will join our community! <br>
-          Zoe<br>
+            Cameron is a rising senior in high school in Long Island. Cameron wanted a place where teens could talk about different things like social issues or just a place to talk about different things, but be anonymous. Being anonymous helps the person in many ways. Now that person doesn't have to be scared to say different things, worried about being judged or even known as the person who said what they said. She feels this will help teens get things off their chest and relieve some stress. <br>
+          Claire is a rising high school senior in Manhattan. <br>
+          Elaine hopes that Woke Up will allow an outlet for teenagers to share their opinions and become more aware and accepting of other’s opinions. She wants teenagers to have discussions without being afraid of backlash. She thanks you for visiting Woke Up and hopes that you will join our community! <br>
           Zoe is a 17 year old, native New Yorker who has a passion for activism,coding, and sports. Zoe hopes that this website provides a safe space for young adults to talk and learn about social issues. She is excited for the future of Woke Up and wants to thank everyone for stopping by!
         <p>
         </div>
