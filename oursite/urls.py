@@ -28,6 +28,8 @@ urlpatterns = [
     url(r'^websites$', TemplateView.as_view(template_name='pages/Resources/Website/website.html'), name="websites"),
     url(r'^culturalappropriation/$', TemplateView.as_view(template_name='pages/culturalappropriation.html'), name="culturalappropriation"),
 
+    url(r'^cultural-appropriation-survey$', TemplateView.as_view(template_name='pages/Resources/survey/survey.html'), name="survey"),
+
 #    url(r'^posts/cultural-appropriation$', TemplateView.as_view(template_name='pages/homepage.html'), name="homepage"),
 #    url(r'^posts/model-minority-myth$', TemplateView.as_view(template_name='pages/homepage.html'), name="homepage"),
 #    url(r'^posts/reverse-racism$', TemplateView.as_view(template_name='pages/homepage.html'), name="homepage"),

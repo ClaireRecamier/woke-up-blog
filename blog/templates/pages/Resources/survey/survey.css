@@ -1,0 +1,29 @@
+h1{
+    font-family:'Sedgwick Ave Display',cursive;
+    font-size:50pt;
+    text-align:center;
+}
+
+p{
+    font-family:'Oswald',sans-serif;
+    font-size:15pt;
+    text-align:center;
+}
+
+h2{
+    font-family:'Oswald',sans-serif;
+    font-size:15pt;
+    text-align:left;
+}
+
+h3{
+  font-family:'Oswald',sans-serif;
+  font-size:15pt;
+  text-align:left;
+}
+body{
+      font-family:'Oswald',sans-serif;
+      font-size:15pt;
+      text-align:left;
+      background-color:#B28E08;
+}
