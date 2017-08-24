@@ -1,6 +1,8 @@
 {% extends 'blog/base.html' %}
+<link rel="stylesheet" href="{ % static 'css/talk_style.css' % }">
 
 {% block content %}
+
     {% for category in categories %}
         <div class="post">
             <div class="date">

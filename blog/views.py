@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.utils import timezone
 from .models import Post, Category
 from django.shortcuts import render, get_object_or_404
-from .forms import PostForm
+from .forms import PostForm, PostVentForm
 from django.shortcuts import redirect
 
 
@@ -37,6 +37,7 @@ def post_list_rr(request):
 def post_list_vent(request):
     posts = Post.objects.filter(category=4)
     return render(request, 'pages/vent_homepage.html', {'posts': posts})
+
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)

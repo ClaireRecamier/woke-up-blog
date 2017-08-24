@@ -1,6 +1,7 @@
 {% extends 'blog/base.html' %}
-
+<link rel="stylesheet" href="{ % static 'css/talk_style.css' % }">
 {% block content %}
+
     {% for post in posts %}
         <div class="post">
             <div class="date">

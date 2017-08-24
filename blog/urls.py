@@ -14,4 +14,6 @@ urlpatterns = [
     url(r'^category$', views.category_list, name='category_list'),
     url(r'^category/(?P<pk>\d+)/$', views.category_detail, name='category_detail'),
 
+    
+#    url(r'^post/new-vent$', views.post_new_vent, name='post_new_vent'),
 ]
